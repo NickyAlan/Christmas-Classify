@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christmas Classify</title>
+    <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="./example_image/logo.png" type="image/x-icon">
+</head>
+<body>
+    
+    <h1 class="title">Christmas Classify</h1>
+    <span class="desc"><i><p>Christmas Image Classification with 5 Classes on Website <b>No Backend Needed</b>.</p></i></span>
+    <div class="left-container">
+        <form id="uploadForm">
+            <input type="file" id="fileInput" onchange="uploadImage()"/>
+        </form>
+        <span>
+            <a id="example" onclick="exampleDisplay()">example image</a> 
+            <a href="https://github.com/NickyAlan/Christmas-Classify">github</a>
+        </span>
+    </div>
+    
+    <div class="top-container">
+        <div id="imageContainer">
+            <img id="imageDisplay"/>
+            <div id="result">
+                <h1 id="prediction"></h1>
+                <ul id="predictProbas"></ul>
+            </div>
+        </div>
+        <div id="lds-facebook"><div></div><div></div><div></div></div>
+    </div>
+
+    <div id="container">
+        <div class="load"></div>
+        <div class="load"></div>
+        <div class="load"></div>
+        <div class="load"></div>
+        <div class="load"></div>
+        <div class="load"></div>
+        <div class="load"></div>
+        <div class="load"></div>
+        <div class="load"></div>
+        <div class="load"></div>
+        <div class="load"></div>
+        <div class="load"></div>
+        <div class="load"></div>
+        <div class="load"></div>
+        <div class="load"></div>
+        <div class="load"></div>
+    </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jimp/0.22.10/jimp.min.js"></script>        
+  <script src="https://cdn.jsdelivr.net/npm/onnxruntime-web/dist/ort.min.js"></script> 
+  <script src="main.js"></script>
+</body>
+</html>
