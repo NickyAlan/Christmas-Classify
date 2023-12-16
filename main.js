@@ -12,7 +12,6 @@ const exampleA = document.getElementById("example");
 const loadDiv = document.getElementsByClassName('load');
 const imageContainer = document.getElementById("imageContainer")
 const loadCir = document.getElementById("lds-facebook")
-
 let pathIdx = 0;
 
 async function loadModel() {
@@ -274,13 +273,15 @@ function displayLoad(state) {
         <div class="load"></div>
         <div class="load"></div>`
       imageContainer.style.display = "none";
+      imageDisplay.style.display = "none";
       loadCir.style.display = "block"
   } else {
     for (let i = 0; i < loadDiv.length; i++) {
       loadDiv[i].style.display = "none";
     }
     imageContainer.style.display = "flex";
-    loadCir.style.display = "none"
+    imageDisplay.style.display = "block";
+    loadCir.style.display = "none";
   }
 }
 
